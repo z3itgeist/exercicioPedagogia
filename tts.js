@@ -1,4 +1,4 @@
-import { ElevenLabsClient } from '@elevenlabs/elevenlabs-js';
+/*import { ElevenLabsClient } from '@elevenlabs/elevenlabs-js';
 
 const client = new ElevenLabsClient({
   apiKey: process.env.ELEVENLABS_API_KEY, 
@@ -34,4 +34,11 @@ export default async function audioGenerator(req, res) {
     console.error(error);
     res.status(500).json({ error: 'Erro ao gerar áudio' });
   }
-}
+}*/
+const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
+
+const elevenlabs = new ElevenLabsClient({
+  apiKey: ELEVENLABS_API_KEY,
+});
+
+
