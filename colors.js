@@ -15,21 +15,21 @@ buttons.forEach(function(button) {
 function colorSounds(element) {
     
     const id = element.id;
-    const texto = element.textContent;
+    const text = element.textContent;
 
-    console.log("A cor é:", texto, "e o id é:", id);
-    audio(texto)
+    console.log("A cor é:", text, "e o id é:", id);
+    audio(text)
 
 }
 
-async function audio(texto) {
+async function audio(text) {
     
-    const response = await fetch ('/tts.js', {
+    const response = await fetch ('/tts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({texto: texto})
+        body: JSON.stringify({text: text})
     });
 
   const audioBlob = await response.blob();
