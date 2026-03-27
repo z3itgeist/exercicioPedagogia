@@ -6,7 +6,7 @@ const buttons = document.querySelectorAll("button");
 
 buttons.forEach(function(button) {
     button.addEventListener("click", function(event){
-        const element = event.target;
+        const element = event.currentTarget;
         colorSounds(element);
         
     });
