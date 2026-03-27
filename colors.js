@@ -15,21 +15,23 @@ buttons.forEach(function(button) {
 function colorSounds(element) {
     
     const id = element.id;
-    const text = element.textContent;
+    const img = element.tagName === "IMG" ? element : element.querySelector("img");
+    const textToRead = img ? img.alt : "";
 
-    console.log("A cor é:", text, "e o id é:", id);
-    audio(text)
-
+    if(textToRead){
+        console.log("A cor é:", textToRead, "e o id é:", id);
+        audio(textToRead)
+ }
 }
 
-async function audio(text) {
+async function audio(textToRead) {
     
     const response = await fetch ('/tts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({text: text})
+        body: JSON.stringify({text: textToRead})
     });
 
   const audioBlob = await response.blob();

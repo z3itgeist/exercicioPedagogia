@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 require("dotenv").config();
 const path = require('path');
-console.log("API KEY:", process.env.ELEVENLABS_API_KEY);
 app.use(express.json());
 app.use(express.static(__dirname));
 const port = 3000
