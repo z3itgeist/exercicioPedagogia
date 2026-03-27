@@ -1,51 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning with Sounds</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Learning with Songs</title>
+
+<link rel="stylesheet" href="index.css">
+
 </head>
+
 <body>
-<header> Learning with Sounds</header>
-<!--criar 3 divs, colors, forms, numbers cada um para um dos mini-jogos
-tem que ficar as 3 lado a lado, e caber numa tela
-fundo escuro-->
-<div id="colorsGame">
-    <!--criar 8 elementos clicáveis que toquem o nome da cor em ingles
-    criar os elementos na página, ao clicar chamam cada um uma função-->
-    <div id="sumPink">
-        <button type="button" id="redButton">Red</button>
-        <button type="button" id="whiteButton">White</button>
-        <button type="button" id="pinkButton">Pink</button>
-    </div>
-    <div id="sumPurple">
-        <button type="button" id="redButton">Red</button>
-        <button type="button" id="blueButton">Blue</button>
-        <button type="button" id="purpleButton">Purple</button>
-    </div>
-    <div id="sumOrange">
-       <button type="button" id="redButton">Red</button>
-        <button type="button" id="yellowButton">Yellow</button>
-        <button type="button" id="orangeButton">Orange</button>
-    </div>
-    <div id="sumGreen">
-        <button type="button" id="blueButton">Blue</button>
-        <button type="button" id="yellowButton">Yellow</button>
-        <button type="button" id="greenButton">Green</button>
-    </div>
+
+<header>
+
+<div class="logo">
+Learning with Songs
 </div>
 
-<div id="formsGame"></div>
-<div id="numbersGame"></div>
+<div class="music">
+♫
+</div>
+
+</header>
+
+
+<main>
+
+
+<section class="game-box">
+
+<h2>Colors</h2>
+
+<div id="colorsGame">
+
+<div id="sumPink" class="colorRow">
+
+<button id="redButton">
+<img src="./images/red.png" alt="red">
+</button>
+
+<span>+</span>
+
+<button id="whiteButton">
+<img src="./images/white.png" alt="white">
+</button>
+
+<span>=</span>
+
+<button id="pinkButton">
+<img src="./images/pink.png" alt="pink">
+</button>
+
+</div>
+
+
+<div id="sumPurple" class="colorRow">
+
+<button id="redButton">
+<img src="./images/red.png" alt="red">
+</button>
+
+<span>+</span>
+
+<button id="blueButton">
+<img src="./images/blue.png" alt="blue">
+</button>
+
+<span>=</span>
+
+<button id="purpleButton">
+<img src="./images/purple.png" alt="purple">
+</button>
+
+</div>
+
+
+<div id="sumOrange" class="colorRow">
+
+<button id="redButton">
+<img src="./images/red.png" alt="red">
+</button>
+
+<span>+</span>
+
+<button id="yellowButton">
+<img src="./images/yello.png" alt="yellow">
+</button>
+
+<span>=</span>
+
+<button id="orangeButton">
+<img src="./images/orange.png" alt="orange">
+</button>
+
+</div>
+
+
+<div id="sumGreen" class="colorRow">
+
+<button id="blueButton">
+<img src="./images/blue.png" alt="blue">
+</button>
+
+<span>+</span>
+
+<button id="yellowButton">
+<img src="./images/yello.png" alt="yellow">
+</button>
+
+<span>=</span>
+
+<button id="greenButton">
+<img src="./images/green.png" alt="green">
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="game-box">
+
+<h2>Forms</h2>
+
+<div id="formsGame">
+
+<button id="squareButton">
+<img src="./images/square.png" alt="square">
+</button>
+
+<button id="triangleButton">
+<img src="./images/triangle.png" alt="triangle">
+</button>
+
+<button id="circleButton">
+<img src="./images/circle.png" alt="circle">
+</button>
+
+</div>
+
+</section>
+
+
+<section class="game-box">
+
+<h2>Numbers</h2>
+
+<div id="numbersGame">
+
+<button id="oneButton"><img src="./images/one.png" alt="1"></button>
+<button id="twoButton"><img src="./images/two.png" alt="2"></button>
+<button id="threeButton"><img src="./images/three.png" alt="3"></button>
+<button id="fourButton"><img src="./images/four.png" alt="4"></button>
+<button id="fiveButton"><img src="./images/five.png" alt="5"></button>
+<button id="sixButton"><img src="./images/six.png" alt="6"></button>
+<button id="sevenButton"><img src="./images/seven.png" alt="7"></button>
+<button id="eightButton"><img src="./images/eight.png" alt="8"></button>
+<button id="nineButton"><img src="./images/nine.png" alt="9"></button>
+<button id="tenButton"><img src="./images/ten.png" alt="10"></button>
+
+</div>
+
+</section>
+
+
+</main>
 
 
 <footer>
-Projeto por Yasmin Cardoso
+
+<span>idea by Yasmin Cardoso</span>
+
+<span>by Gabriel Braga</span>
+
 </footer>
-    
+
 
 <script src="colors.js"></script>
-
+<script src="buttons.js"></script>
 
 </body>
+
 </html>
