@@ -26,7 +26,7 @@ function colorSounds(element) {
 
 async function audio(textToRead) {
     
-    const response = await fetch ('/tts', {
+    const response = await fetch ('http://localhost:8080/tts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
