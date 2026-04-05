@@ -33,7 +33,7 @@ app.get('/', (req,res)=> {
   res.send('Rota funcionando');
 })
 
-app.post("/tts", async (req,res) =>{
+app.post("https://exerciciopedagogia-production.up.railway.app", async (req,res) =>{
     try {
         const text = req.body.text;
         console.log("Recebido texto para converter:", text);
