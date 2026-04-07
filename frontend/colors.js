@@ -26,13 +26,19 @@ function colorSounds(element) {
 
 async function audio(textToRead) {
     
-    const response = await fetch ('https://exerciciopedagogia-production.up.railway.app/', {
+    const response = await fetch ('https://exerciciopedagogia-production.up.railway.app/tts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({text: textToRead})
     });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Erro retornado pelo backend:", errorText);
+      return; // interrompe aqui
+    }
 
   const audioBlob = await response.blob();
   const audioUrl = URL.createObjectURL(audioBlob);
