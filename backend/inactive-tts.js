@@ -1,4 +1,4 @@
-require("dotenv").config();
+/*require("dotenv").config();
 
 const { ElevenLabsClient } = require("@elevenlabs/elevenlabs-js");
 
@@ -30,4 +30,4 @@ async function gerarAudio(text) {
   return content;
 }
 
-module.exports = {gerarAudio}
+module.exports = {gerarAudio}*/

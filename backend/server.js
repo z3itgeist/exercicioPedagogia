@@ -15,7 +15,7 @@ app.use(express.json());
 
 const port = process.env.PORT || 8080;
 
-const { gerarAudio } = require("./tts");
+const { gerarAudio } = require("./sound-api");
 
 /*app.get('/', (req, res) => {
 res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
@@ -33,7 +33,7 @@ app.get('/', (req,res)=> {
   res.send('Rota funcionando');
 })
 
-app.post("/tts", async (req,res) =>{
+app.post("/sound-api", async (req,res) =>{
     try {
         const text = req.body.text;
         console.log("Recebido texto para converter:", text);
