@@ -26,7 +26,7 @@ function colorSounds(element) {
 
 async function audio(textToRead) {
     
-    const response = await fetch ('https://exerciciopedagogia-production.up.railway.app/tts', {
+    const response = await fetch ('http://localhost:8080/sound-api', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
